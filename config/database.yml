@@ -76,10 +76,6 @@ test:
 # You can use this database configuration with:
 #
 #   production:
-#     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: uploader_production
-  username: uploader
-  password: <%= ENV['UPLOADER_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
